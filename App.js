@@ -78,7 +78,12 @@ const AppNavigator = createBottomTabNavigator({
     ProductList: {
       screen: ProductsView,
       navigationOptions: {
-        title: 'Home'
+        title: 'Home',
+        headerTitleStyle: {
+          textAlign: "center",
+          flex: 1,
+          fontFamily: 'monospace'
+        },
       }
     },
     DetailsProduct: {
@@ -92,7 +97,12 @@ const AppNavigator = createBottomTabNavigator({
     CategoryView: {
       screen: CategoryView,
       navigationOptions: {
-        title: 'Category Products'
+        title: 'Categories',
+        headerTitleStyle: {
+          textAlign: "center",
+          flex: 1,
+          fontFamily: 'monospace'
+        },
       }
     }
   }),
@@ -101,18 +111,31 @@ const AppNavigator = createBottomTabNavigator({
       screen: CartView,
       navigationOptions: {
         title: 'Cart',
+        headerTitleStyle: {
+          textAlign: "center",
+          flex: 1,
+          fontFamily: 'monospace'
+        },
       }
     },
     CheckoutView: {
       screen: CheckoutView,
       navigationOptions: {
         title: 'Checkout',
+        headerTitleStyle: {
+          flex: 1,
+          fontFamily: 'monospace'
+        },
       },
     },
     PaymentView: {
       screen: PaymentView,
       navigationOptions: {
         title: 'Payment',
+        headerTitleStyle: {
+          flex: 1,
+          fontFamily: 'monospace'
+        },
       },
     },
   }),
@@ -120,32 +143,55 @@ const AppNavigator = createBottomTabNavigator({
     LoginView: {
       screen: LoginView,
       navigationOptions: {
-        title: 'Login'
+        title: 'Login',
+        headerTitleStyle: {
+          textAlign: "center",
+          flex: 1,
+          fontFamily: 'monospace'
+        },
       }
     },
     SignUpView: {
       screen: SignUpView,
       navigationOptions: {
-        title: 'SignUp'
+        title: 'SignUp',
+        headerTitleStyle: {
+          flex: 1,
+          fontFamily: 'monospace'
+        },
       }
     },
     AccountView: {
       screen: AccountView,
       navigationOptions: {
         title: 'My Account',
-        headerLeft: null
+        headerLeft: null,
+        headerTitleStyle: {
+          textAlign: "center",
+          flex: 1,
+          fontFamily: 'monospace'
+        },
       }
     },
     ProfileView: {
       screen: ProfileView,
       navigationOptions: {
-        title: 'Profile'
+        title: 'Profile',
+        headerTitleStyle: {
+          flex: 1,
+          fontFamily: 'monospace'
+        },
       }
     },
     TransactionView: {
       screen: TransactionHistoryView,
       navigationOptions: {
-        title: 'History Transaction'
+        title: 'History Transaction',
+        headerTitleStyle: {
+          textAlign: "center",
+          flex: 1,
+          fontFamily: 'monospace'
+        },
       }
     },
   })

@@ -2,15 +2,15 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import {
     Container,
-    Header,
     Button,
     Text,
-    Body,
     Form,
     Item as FormItem,
     Input,
     Label,
-    Title,
+    Toast,
+    View,
+    Icon
 } from 'native-base'
 
 import { postUser } from '../../publics/redux/actions/users'
@@ -43,45 +43,59 @@ class SignUpView extends Component {
     }
     render() {
         return (
-            <Container>
-                <Header>
-                    <Body>
-                        <Title>This is Sign Up page</Title>
-                    </Body>
-                </Header>
+            <Container style={{ backgroundColor: '#b2ebf2' }}>
                 <Form>
-                    <FormItem floatingLabel>
-                        <Label>Email</Label>
-                        <Input
-                            onChangeText={(email) => this.setState({ email })}
-                            value={this.state.email}
-                        />
-                    </FormItem>
-                    <FormItem floatingLabel>
-                        <Label>Username</Label>
-                        <Input
-                            onChangeText={(username) => this.setState({ username })}
-                            value={this.state.username}
-                        />
-                    </FormItem>
-                    <FormItem floatingLabel last>
-                        <Label>Password</Label>
-                        <Input secureTextEntry={true}
-                            onChangeText={(password1 => this.setState({ password1 }))}
-                            value={this.state.password1}
-                        />
-                    </FormItem>
-                    <FormItem floatingLabel last>
-                        <Label>Password</Label>
-                        <Input secureTextEntry={true}
-                            onChangeText={(password2 => this.setState({ password2 }))}
-                            value={this.state.password2}
-                        />
-                    </FormItem>
-                    <Button full primary style={{ paddingBottom: 4 }}
-                        onPress={() => this.SignUpAuth()}>
-                        <Text> Sign Up </Text>
-                    </Button>
+                    <View style={{ marginTop: 50, marginHorizontal: 25, borderRadius: 20, backgroundColor: 'white' }}>
+                        <FormItem>
+                            <Icon type='MaterialIcons' name='email' style={{ marginLeft: 5, color: '#bdbdbd', fontSize: 20 }} />
+                            <Input
+                                onChangeText={(email) => this.setState({ email })}
+                                value={this.state.email}
+                                placeholder='Email'
+                                style={{ fontSize: 15 }}
+                            />
+                        </FormItem>
+                    </View>
+                    <View style={{ marginTop: 20, marginHorizontal: 25, borderRadius: 20, backgroundColor: 'white' }}>
+                        <FormItem>
+                            <Icon name='person' style={{ marginLeft: 5, color: '#bdbdbd', fontSize: 20 }} />
+                            <Input
+                                onChangeText={(username) => this.setState({ username })}
+                                value={this.state.username}
+                                placeholder='Username'
+                                style={{ fontSize: 15 }}
+                            />
+                        </FormItem>
+                    </View>
+                    <View style={{ marginTop: 20, marginHorizontal: 25, borderRadius: 20, backgroundColor: 'white' }}>
+                        <FormItem>
+                            <Icon type='MaterialCommunityIcons' name='key-variant' style={{ marginLeft: 5, color: '#bdbdbd', fontSize: 20 }} />
+                            <Input secureTextEntry={true}
+                                onChangeText={(password1) => this.setState({ password1 })}
+                                value={this.state.password1}
+                                placeholder='Password'
+                                style={{ fontSize: 15 }}
+                            />
+                        </FormItem>
+                    </View>
+                    <View style={{ marginTop: 20, marginHorizontal: 25, borderRadius: 20, backgroundColor: 'white' }}>
+                        <FormItem>
+                            <Icon type='MaterialCommunityIcons' name='key-variant' style={{ marginLeft: 5, color: '#bdbdbd', fontSize: 20 }} />
+                            <Input secureTextEntry={true}
+                                onChangeText={(password2) => this.setState({ password2 })}
+                                value={this.state.password2}
+                                placeholder='Confirm Password'
+                                style={{ fontSize: 15 }}
+                            />
+                        </FormItem>
+                    </View>
+                    <View style={{ alignSelf: 'center', width: 305, marginTop: 20 }}>
+                        <Button block rounded style={{ paddingBottom: 4, marginTop: 15 }}
+                            onPress={() => this.SignUpAuth()}
+                        >
+                            <Text> Sign Up </Text>
+                        </Button>
+                    </View>
                 </Form>
             </Container>
         )

@@ -63,3 +63,61 @@ paymentlist =
             name: 'Bank BNI'
         }
     ]
+
+categorylist =
+    [
+        {
+            image: 'https://www.static-src.com/siva/asset//10_2018/novdeal_handphone.png',
+            name: 'Handphone & Tablet',
+            description: 'Tablet, Handphone, Accesories ',
+
+        },
+        {
+            image: 'https://www.static-src.com/siva/asset//10_2018/novdeal_komputer.png',
+            name: 'Computer & Laptop',
+            description: 'Computer, Laptop, Printer',
+
+        },
+        {
+            image: 'https://www.static-src.com/siva/asset//10_2018/novdeal_mvg.png',
+            name: 'Toys & Video Games',
+            description: 'Video Games, Games & Puzzles',
+
+        },
+        {
+            image: 'https://www.static-src.com/siva/asset//10_2018/novdeal_otomotif.png',
+            name: 'Otomotif',
+            description: 'Car Accessories, Sparepart Otomotif',
+
+        },
+        {
+            image: 'https://www.static-src.com/siva/asset//10_2018/novdeal_ele.png',
+            name: 'Electronic',
+            description: 'Home Appliances, Television, Oven',
+
+        },
+        {
+            image: 'https://www.static-src.com/siva/asset//10_2018/novdeal_tiket.png',
+            name: 'Ticket and Voucher',
+            description: 'Show & Events, Ticket Seminar',
+
+        },
+        {
+            image: 'https://www.static-src.com/siva/asset//10_2018/novdeal_fpr.png',
+            name: 'Man Fashion',
+            description: 'T-shirt, Shoes, Accessories',
+
+        },
+        {
+            image: 'https://www.static-src.com/siva/asset//10_2018/novdeal_fwa.png',
+            name: 'Woman Fashion',
+            description: "Women's clothing, Shoes, Accessories",
+
+        },
+        {
+            image: 'https://www.static-src.com/siva/asset//10_2018/novdeal_home.png',
+            name: 'Home & Living',
+            description: 'Furniture, Kitchen Set',
+
+        }
+    ]    

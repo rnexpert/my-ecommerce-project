@@ -58,7 +58,7 @@ class AccountView extends Component {
                             <View style={{ flexDirection: 'row' }}>
                                 <View style={{ marginLeft: -5 }}>
                                     <Image source={{ uri: profile.image }}
-                                        style={{ width: 80, height: 80 }} />
+                                        style={{ width: 80, height: 80, borderRadius: 40 }} />
                                 </View>
                                 <View style={{ marginLeft: 10 }}>
                                     <Text style={{ fontSize: 15, fontWeight: 'bold' }}>{profile.name}</Text>
